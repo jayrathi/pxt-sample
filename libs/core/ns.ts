@@ -2,12 +2,12 @@
  * Basic functionalities.
  */
 //% color=#00BCD4 weight=100
-namespace turtle {
+namespace workbook {
 
 }
 
 //% color=#D4BC00 weight=95
-namespace hare {
+namespace worksheet {
 
 }
 
@@ -17,4 +17,8 @@ namespace hare {
 //% color=#FF5722 weight=90
 namespace control {
 
+}
+
+namespace excelScript{
+    
 }

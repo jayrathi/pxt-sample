@@ -1,9 +1,9 @@
 {
-  "name": "pxt-sample",
-  "version": "2.0.2",
-  "description": "sample target for PXT",
+  "name": "pxt-officescript",
+  "version": "0.0.1",
+  "description": "OfficeScript PXT editor",
   "keywords": [
-    "JavaScript",
+    "OfficeScript",
     "education",
     "PXT"
   ],

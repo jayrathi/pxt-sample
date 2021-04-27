@@ -1,27 +1,51 @@
 // Auto-generated from simulator. Do not edit.
-declare namespace hare {
+declare namespace worksheet {
     /**
      * This is hop
      */
     //% blockId="sampleHop" block="hop %hop on color %color=colorNumberPicker"
     //% hop.fieldEditor="gridpicker"
-    //% shim=hare::hop
+    //% shim=worksheet::hop
     function hop(hop: Hop, color: number): void;
 
     //% blockId=sampleOnLand block="on land"
     //% optionalVariableArgs
-    //% shim=hare::onLand
+    //% shim=worksheet::onLand
     function onLand(handler: (height: number, more: number, most: number) => void): void;
 
 }
-declare namespace turtle {
+declare namespace workbook {
+    /**
+     * This is hop
+     */
+    //% blockId="sampleHop" block="hop %hop on color %color=colorNumberPicker"
+    //% hop.fieldEditor="gridpicker"
+    //% shim=workbook::hop
+    function hop(hop: Hop, color: number): void;
+
+    //% blockId=sampleOnLand block="on land"
+    //% optionalVariableArgs
+    //% shim=workbook::onLand
+    function onLand(handler: (height: number, more: number, most: number) => void): void;
+
+    /**
+     * Specifies if the workbook is in AutoSave mode.
+     */
+    //% block="Workbook $this(Workbook) getAutoSave"
+    //% group="Workbook"
+    //% weight="100"
+    //% shim=workbook::getAutoSave
+    function getAutoSave(): boolean;
+
+}
+declare namespace range {
     /**
      * Moves the sprite forward
      * @param steps number of steps to move, eg: 1
      */
     //% weight=90
     //% blockId=sampleForward block="forward %steps"
-    //% shim=turtle::forwardAsync promise
+    //% shim=range::forwardAsync promise
     function forward(steps: number): void;
 
     /**
@@ -32,7 +56,7 @@ declare namespace turtle {
     //% weight=85
     //% blockId=sampleTurn block="turn %direction|by %angle degrees"
     //% angle.min=-180 angle.max=180
-    //% shim=turtle::turnAsync promise
+    //% shim=range::turnAsync promise
     function turn(direction: Direction, angle: number): void;
 
     /**
@@ -40,7 +64,7 @@ declare namespace turtle {
      * @param handler 
      */
     //% blockId=onBump block="on bump"
-    //% shim=turtle::onBump
+    //% shim=range::onBump
     function onBump(handler: () => void): void;
 
 }
@@ -100,12 +124,12 @@ declare namespace console {
         public forward(steps: number): void;
 
     }
-declare namespace sprites {
+declare namespace excelScript {
     /**
      * Creates a new sprite
      */
     //% blockId="sampleCreate" block="createSprite"
-    //% shim=sprites::createSprite
+    //% shim=excelScript::createSprite
     function createSprite(): Sprite;
 
 }

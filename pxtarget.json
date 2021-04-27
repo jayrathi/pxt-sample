@@ -1,7 +1,7 @@
 {
-    "id": "sample",
-    "name": "sample",
-    "title": "MakeCode Editor Sample",
+    "id": "officescript",
+    "name": "officescript",
+    "title": "OfficeScript Editor",
     "corepkg": "core",
     "cloud": {
         "workspace": false,
